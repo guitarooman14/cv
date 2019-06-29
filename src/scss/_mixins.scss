@@ -1,0 +1,5 @@
+@mixin format_svg($size: 24px) {
+  width: $size;
+  height: $size;
+  font-size: $size;
+}
