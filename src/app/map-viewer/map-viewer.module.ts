@@ -4,7 +4,8 @@ import {MapViewerComponent} from './map-viewer.component';
 import {MapComponent} from './core/map/map.component';
 import {AngularOpenlayersModule} from 'ngx-openlayers';
 import {ToolbarModule} from './core/toolbar/toolbar.module';
-import {MatIconModule, MatListModule} from '@angular/material';
+import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
 import {NavbarModule} from '../shared/navbar/navbar.module';
 
 @NgModule({
