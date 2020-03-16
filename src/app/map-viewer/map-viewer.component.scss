@@ -1,6 +1,36 @@
+@import '_core';
+
 :host {
   position: absolute;
-  height: calc(100% - 64px);
-  top: 64px;
+  height: calc(100% - 40px);
+  top: 40px;
   width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+cv-map {
+  flex: 1;
+}
+
+cv-toolbar-container {
+  width: 100%;
+}
+
+.toolbar-container {
+
+  &-profile {
+    background-color: $cv_medium_slate_blue;
+    padding: 10px;
+    min-width: 20vw;
+
+    mat-icon {
+      @include format_svg(48px);
+    }
+
+    h2 {
+      color: white;
+      font-weight: 400;
+    }
+  }
 }

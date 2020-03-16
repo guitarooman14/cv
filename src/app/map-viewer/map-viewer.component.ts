@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./map-viewer.component.scss']
 })
 export class MapViewerComponent implements OnInit {
+  isOpened: boolean;
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onClick() {
+    this.isOpened = !this.isOpened;
   }
 
 }

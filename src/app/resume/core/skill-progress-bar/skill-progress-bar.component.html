@@ -1,0 +1,13 @@
+<div class="skillbar">
+  <div class="skillbar-info">
+    <div class="skillbar-info-title">{{title}}</div>
+    <div class="skillbar-info-percent">{{percent}}%</div>
+  </div>
+  <div class="skillbar-bar">
+    <mat-progress-bar
+      [color]="'primary'"
+      [mode]="'determinate'"
+      [value]="currentValue$ | async">
+    </mat-progress-bar>
+  </div>
+</div>

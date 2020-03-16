@@ -2,8 +2,8 @@ import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
 
 const routes: Routes = [
-  {path: '', redirectTo: '/map-viewer', pathMatch: 'full'},
-  {path: '**', redirectTo: '/map-viewer'}
+  {path: '', redirectTo: '/resume', pathMatch: 'full'},
+  {path: '**', redirectTo: '/resume'}
 ];
 
 @NgModule({

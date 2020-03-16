@@ -1,1 +1,32 @@
-<cv-map></cv-map>
+<cv-navbar></cv-navbar>
+<cv-toolbar-container [isOpened]="isOpened">
+  <div class="toolbar-container">
+    <div class="toolbar-container-profile">
+      <mat-icon (click)="onClick()">account_circle</mat-icon>
+      <h2>Maxime Gaudin</h2>
+      <h2>maxime.gaudin14@gmail.com</h2>
+      <h2>06 85 45 05 59</h2>
+    </div>
+    <div class="toolbar-container-items">
+      <mat-list>
+        <h3 mat-subheader>Folders</h3>
+        <mat-list-item>
+          <mat-icon mat-list-icon>folder</mat-icon>
+          <h4 mat-line>test</h4>
+          <p mat-line> test </p>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <h3 mat-subheader>Notes</h3>
+        <mat-list-item>
+          <mat-icon mat-list-icon>note</mat-icon>
+          <h4 mat-line>test</h4>
+          <p mat-line> test </p>
+        </mat-list-item>
+      </mat-list>
+    </div>
+  </div>
+  <cv-toolbar-panel>
+    <router-outlet></router-outlet>
+  </cv-toolbar-panel>
+  <cv-map></cv-map>
+</cv-toolbar-container>

@@ -1,0 +1,11 @@
+<div class="toolbar-wrapper">
+  <ng-content select=".toolbar-container"></ng-content>
+  <mat-sidenav-container>
+    <mat-sidenav [opened]="isOpened" [mode]="over">
+      <ng-content select="cv-toolbar-panel"></ng-content>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <ng-content></ng-content>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>
