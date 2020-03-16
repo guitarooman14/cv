@@ -1,0 +1,23 @@
+<!--<div class="language-switcher-container">-->
+<!--  <figure class="flag">-->
+<!--    <img src="./assets/img/country/fr.png" (click)="onFlagClick('fr')">-->
+<!--  </figure>-->
+<!--  <figure class="flag">-->
+<!--    <img src="./assets/img/country/uk.png" (click)="onFlagClick('en')">-->
+<!--  </figure>-->
+<!--</div>-->
+<div class="mid">
+
+  <label class="rocker">
+    <input type="checkbox" checked>
+    <span class="switch-left" (click)="onFlagClick('en')">
+      <svg>
+        <use xlink:href="/assets/img/sprites.svg#british-flag"></use>
+      </svg>
+    </span>
+    <span class="switch-right" (click)="onFlagClick('fr')"><svg>
+      <use xlink:href="/assets/img/sprites.svg#french-flag"></use>
+      </svg></span>
+  </label>
+
+</div>
